@@ -1,0 +1,70 @@
+{
+  "statusCode": 200,
+  "message": "Success",
+  "data": [
+    {
+      "productId": 14,
+      "name": "Blushis",
+      "title": "blushis Liquid Matte Lipsticks Combo",
+      "description": "Gives a Matte finish look,\nTexture is: Liquid,\nQuantity: 16 ml,\n\nLiquid lipsticks combo set 4",
+      "rating": 3,
+      "price": 875,
+      "offer": 4,
+      "type": "lipstick",
+      "brand": "blushis",
+      "category": "beauty",
+      "merchantId": 2,
+      "quantity": 12,
+      "status": "ACTIVE",
+      "thumbnailURL": "https://rukminim1.flixcart.com/image/832/832/l4ln8nk0/lipstick/g/a/7/16-non-transfer-insta-beauty-waterproof-sensational-liquid-matte-original-imagfghxhyegbwdy.jpeg?q=70",
+      "productImageURLs": [
+        "https://rukminim1.flixcart.com/image/832/832/l4ln8nk0/lipstick/e/1/h/16-non-transfer-insta-beauty-waterproof-sensational-liquid-matte-original-imagfghxahsjg9vw.jpeg?q=70",
+        "https://rukminim1.flixcart.com/image/832/832/l4ln8nk0/lipstick/g/a/7/16-non-transfer-insta-beauty-waterproof-sensational-liquid-matte-original-imagfghxhyegbwdy.jpeg?q=70"
+      ],
+      "searchTags": [
+        "matte lipstick",
+        "lipstick"
+      ],
+      "reviews": [
+        {
+          "reviewId": 5103,
+          "shopperId": 21498,
+          "shopperName": "Chinmayee N",
+          "heading": "Worth Buying",
+          "description": "The product is nice.",
+          "rating": 4.5,
+          "dateTime": "2024-03-16T00:51:45.439"
+        },
+        {
+          "reviewId": 5740,
+          "shopperId": 40335,
+          "shopperName": "string",
+          "heading": "string",
+          "description": "string",
+          "rating": 0,
+          "dateTime": "2024-03-21T02:02:44.438"
+        },
+        {
+          "reviewId": 8129,
+          "shopperId": 62789,
+          "shopperName": "Dinesh Makvana",
+          "heading": "Worth Buying",
+          "description": "Product is good, Thank You!",
+          "rating": 3.5,
+          "dateTime": "2024-05-30T21:48:09.311"
+        },
+        {
+          "reviewId": 8374,
+          "shopperId": 83855,
+          "shopperName": "Chetan belakeri",
+          "heading": "lipstick",
+          "description": "it was a very good product",
+          "rating": 4,
+          "dateTime": "2024-06-06T17:55:59.993"
+        }
+      ],
+      "createdDateTime": "2023-09-12T17:20:31.977",
+      "zoneId": "ALPHA"
+    }
+ ]
+}
