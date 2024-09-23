@@ -11,7 +11,7 @@ public class InsertingDataToProperties_FileTest {
 	@Test
 	public void exCel() throws IOException {
 		
-		FileOutputStream file = new FileOutputStream("./src\\test\\resources\\Data1.properties");
+		FileOutputStream file = new FileOutputStream("./src/test/resources/Data1.properties");
 		
 		Properties pro = new Properties();
 		pro.setProperty("url", "adjfoadnjdnv");

@@ -2,52 +2,25 @@ package ddt.organisation;
 
 import java.util.*;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-
+import org.testng.annotations.Test;
 import Generic_Utilities.BassClass;
 import Generic_Utilities.Webdriver_Utility;
-import ObjectRepository.HomePage;
-import ObjectRepository.LoginPage;
 
 public class ProductDeleteTest extends BassClass {
-	public static void main(String[] args) throws Throwable {
+	
+	@Test
+	public void ProductDelete() throws Throwable {
 		
-		WebDriver driver = new ChromeDriver();
-		HomePage homelinks=new HomePage(driver);
-		
-		
-		Webdriver_Utility webutil=new Webdriver_Utility(driver);
-		String USERNAME = webutil.getPropertiesvalue("username");
-		String PASSWORD = webutil.getPropertiesvalue("password");
-		String URL = webutil.getPropertiesvalue("url");
 
-		
+		Webdriver_Utility webutil=new Webdriver_Utility(driver);
 		int d = webutil.getRandomNum();
 		String s = "Mouse" + d;
-		
-		
-		driver.get(URL);
-		
-		//implicit wait
-		webutil.pageWait();
-		
-		//login
-		LoginPage login=new LoginPage(driver);
-		login.loginToApp(USERNAME, PASSWORD);
-		
-		
-		
-		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//		driver.findElement(By.name("user_name")).sendKeys(USERNAME, Keys.TAB, PASSWORD);
-//		driver.findElement(By.id("submitButton")).click();
-		
+
 		
 		driver.findElement(By.cssSelector("[href='index.php?module=Products&action=index']")).click();
 		driver.findElement(By.cssSelector("[src='themes/softed/images/btnL3Add.gif']")).click();
 		driver.findElement(By.name("productname")).sendKeys(s);
-		
-		
-		
+
 		driver.findElement(By.cssSelector("[title='Save [Alt+S]']")).click();
 		driver.findElement(By.xpath("//a[@href=\"index.php?module=Products&action=index\"]")).click();
 
@@ -70,10 +43,6 @@ public class ProductDeleteTest extends BassClass {
 		}
 		
 
-		// logout		
-		homelinks.logOutFromApp();
-		Thread.sleep(2000);
-		driver.quit();
 
 	}
 

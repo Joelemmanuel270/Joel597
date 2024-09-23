@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testng.SikuliTest">
+      <class name="ddt.organisation.ProductInformationTest">
         <methods>
-          <include name="priya"/>
+          <include name="AM"/>
+          <include name="BM"/>
+          <include name="BC"/>
+          <include name="ProductInformation"/>
+          <include name="AC"/>
+          <include name="BT"/>
+          <include name="AT"/>
         </methods>
-      </class> <!-- testng.SikuliTest -->
+      </class> <!-- ddt.organisation.ProductInformationTest -->
+      <class name="ddt.organisation.ProductDeleteTest">
+        <methods>
+          <include name="ProductDelete"/>
+          <include name="AM"/>
+          <include name="BM"/>
+          <include name="BC"/>
+          <include name="AC"/>
+          <include name="BT"/>
+          <include name="AT"/>
+        </methods>
+      </class> <!-- ddt.organisation.ProductDeleteTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

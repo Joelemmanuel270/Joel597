@@ -2,16 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-23T12:04:31 IST" name="Default suite" finished-at="2024-09-23T12:04:38 IST" duration-ms="6737">
+  <suite started-at="2024-09-23T15:25:37 IST" name="Default suite" finished-at="2024-09-23T15:25:55 IST" duration-ms="17718">
     <groups>
     </groups>
-    <test started-at="2024-09-23T12:04:31 IST" name="Default test" finished-at="2024-09-23T12:04:38 IST" duration-ms="6737">
-      <class name="testng.SikuliTest">
-        <test-method signature="priya()[pri:0, instance:testng.SikuliTest@75d4a5c2]" started-at="2024-09-23T12:04:31 IST" name="priya" finished-at="2024-09-23T12:04:38 IST" duration-ms="6691" status="PASS">
+    <test started-at="2024-09-23T15:25:37 IST" name="Default test" finished-at="2024-09-23T15:25:55 IST" duration-ms="17718">
+      <class name="ddt.organisation.ProductInformationTest">
+        <test-method is-config="true" signature="BT()[pri:0, instance:ddt.organisation.ProductInformationTest@fbd1f6]" started-at="2024-09-23T15:25:37 IST" name="BT" finished-at="2024-09-23T15:25:37 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- priya -->
-      </class> <!-- testng.SikuliTest -->
+        </test-method> <!-- BT -->
+        <test-method is-config="true" signature="BC()[pri:0, instance:ddt.organisation.ProductInformationTest@fbd1f6]" started-at="2024-09-23T15:25:37 IST" name="BC" finished-at="2024-09-23T15:25:39 IST" duration-ms="1425" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BC -->
+        <test-method is-config="true" signature="BM()[pri:0, instance:ddt.organisation.ProductInformationTest@fbd1f6]" started-at="2024-09-23T15:25:39 IST" name="BM" finished-at="2024-09-23T15:25:43 IST" duration-ms="3961" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BM -->
+        <test-method signature="ProductInformation()[pri:0, instance:ddt.organisation.ProductInformationTest@fbd1f6]" started-at="2024-09-23T15:25:43 IST" name="ProductInformation" finished-at="2024-09-23T15:25:52 IST" duration-ms="9553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductInformation -->
+        <test-method is-config="true" signature="AM()[pri:0, instance:ddt.organisation.ProductInformationTest@fbd1f6]" started-at="2024-09-23T15:25:52 IST" name="AM" finished-at="2024-09-23T15:25:55 IST" duration-ms="2505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM -->
+        <test-method is-config="true" signature="AC()[pri:0, instance:ddt.organisation.ProductInformationTest@fbd1f6]" started-at="2024-09-23T15:25:55 IST" name="AC" finished-at="2024-09-23T15:25:55 IST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AC -->
+        <test-method is-config="true" signature="AT()[pri:0, instance:ddt.organisation.ProductInformationTest@fbd1f6]" started-at="2024-09-23T15:25:55 IST" name="AT" finished-at="2024-09-23T15:25:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AT -->
+      </class> <!-- ddt.organisation.ProductInformationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

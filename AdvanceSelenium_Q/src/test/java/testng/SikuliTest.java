@@ -1,34 +1,36 @@
 package testng;
 
-import java.awt.Robot;
+
 import java.awt.event.KeyEvent;
 import java.util.Random;
-
 import org.sikuli.script.Pattern;
 import org.sikuli.script.Screen;
 import org.testng.annotations.Test;
 
-public class SikuliTest {
+public class SikuliTest  {
 	
-	@Test
+	@Test(groups = "priya")
 	public void priya() throws Throwable {
-		Screen scr= new Screen();
-		Pattern pt=new Pattern("C:\\Users\\joele\\OneDrive\\Desktop\\qspider\\start.png");
 		
-		scr.type(pt,"note");
+		Bundle file=new Bundle();
+		
+		
+		Screen scr= new Screen();
+		String start = file.filePath("./src/test/resources/start.png");
+		Pattern pt=new Pattern(start);
+		
+		scr.type(pt,"notepad");
 		Thread.sleep(500);
-		Robot rob=new Robot();
-		rob.keyPress(KeyEvent.VK_ENTER);
-		rob.keyRelease(KeyEvent.VK_ENTER);
-		pt=new Pattern("C:\\Users\\joele\\OneDrive\\Desktop\\qspider\\notepad.png");
+		
+		file.keyBoard(KeyEvent.VK_ENTER);
+
+		String note = file.filePath("./src/test/resources/notepad.png");
+		pt=new Pattern(note);
 		scr.type(pt,"priya is a mental by birth");
 		
-		rob.keyPress(KeyEvent.VK_CONTROL);
-		rob.keyPress(KeyEvent.VK_SHIFT);
-		rob.keyPress(KeyEvent.VK_S);
-		rob.keyRelease(KeyEvent.VK_CONTROL);
-		rob.keyRelease(KeyEvent.VK_SHIFT);
-		rob.keyRelease(KeyEvent.VK_S);
+		file.keyBoard(KeyEvent.VK_CONTROL);
+		file.savefile();
+		
 		
 		Random ran=new Random();
 		int n = ran.nextInt(1000);
@@ -36,6 +38,19 @@ public class SikuliTest {
 		scr.type("priya"+n);
 		
 		
+	}
+	
+	@Test
+	public void lusuPriya() {
+		System.out.println("method name is correct ==> lusuPriya");
+
+	}
+	
+	
+	@Test
+	public void priyaLusu() {
+		System.out.println("method name is correct ==> priyaLusu");
+
 	}
 
 }

@@ -14,7 +14,7 @@ public class FetchingDataFromProperties_FileTest {
 		WebDriver driver = new EdgeDriver();
 	  	driver.manage().window().maximize();
 		
-		FileInputStream file1 = new FileInputStream("./src\\test\\resources\\commonData1.properties.txt");
+		FileInputStream file1 = new FileInputStream("./src/test/resources/commonData1.properties.txt");
 		
 		Properties pro = new Properties();
 		pro.load(file1);
