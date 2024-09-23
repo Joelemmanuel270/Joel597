@@ -8,9 +8,26 @@
     <classes>
       <class name="ddt.organisation.CampaigInformationTest">
         <methods>
+          <include name="AM"/>
+          <include name="BM"/>
+          <include name="BC"/>
           <include name="CampaigInformation"/>
+          <include name="AC"/>
+          <include name="BT"/>
+          <include name="AT"/>
         </methods>
       </class> <!-- ddt.organisation.CampaigInformationTest -->
+      <class name="ddt.organisation.CampaignInformation2Test">
+        <methods>
+          <include name="AM"/>
+          <include name="BM"/>
+          <include name="BC"/>
+          <include name="AC"/>
+          <include name="BT"/>
+          <include name="CampaignInformation2"/>
+          <include name="AT"/>
+        </methods>
+      </class> <!-- ddt.organisation.CampaignInformation2Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

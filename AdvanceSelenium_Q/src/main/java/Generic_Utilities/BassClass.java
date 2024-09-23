@@ -31,8 +31,8 @@ public class BassClass {
 	public void BC() throws Throwable
 	{
 		
-		wlib = new Webdriver_Utility(driver);
-		String BROWSER = wlib.getPropertiesvalue("Browser");
+		File_utility fileb = new File_utility();
+		String BROWSER = fileb.getPropertiesvalue("Browser");
 		if(BROWSER.equalsIgnoreCase("chrome"))
 		{
 		   	 driver=new ChromeDriver();

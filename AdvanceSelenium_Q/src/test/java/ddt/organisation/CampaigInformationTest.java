@@ -12,6 +12,7 @@ public class CampaigInformationTest extends BassClass{
 	
 	@Test
 	public static void CampaigInformation() {
+		
 		Webdriver_Utility web=new Webdriver_Utility(driver);
 		
 		//business logic starts

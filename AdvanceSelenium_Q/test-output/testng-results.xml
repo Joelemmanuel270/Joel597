@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-11T20:10:52 IST" name="Default suite" finished-at="2024-09-11T20:10:52 IST" duration-ms="254">
+  <suite started-at="2024-09-23T12:04:31 IST" name="Default suite" finished-at="2024-09-23T12:04:38 IST" duration-ms="6737">
     <groups>
     </groups>
-    <test started-at="2024-09-11T20:10:52 IST" name="Default test" finished-at="2024-09-11T20:10:52 IST" duration-ms="254">
-      <class name="ddt.DataBaseTest">
-        <test-method signature="Base()[pri:0, instance:ddt.DataBaseTest@4550bb58]" started-at="2024-09-11T20:10:52 IST" name="Base" finished-at="2024-09-11T20:10:52 IST" duration-ms="210" status="PASS">
+    <test started-at="2024-09-23T12:04:31 IST" name="Default test" finished-at="2024-09-23T12:04:38 IST" duration-ms="6737">
+      <class name="testng.SikuliTest">
+        <test-method signature="priya()[pri:0, instance:testng.SikuliTest@75d4a5c2]" started-at="2024-09-23T12:04:31 IST" name="priya" finished-at="2024-09-23T12:04:38 IST" duration-ms="6691" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Base -->
-      </class> <!-- ddt.DataBaseTest -->
+        </test-method> <!-- priya -->
+      </class> <!-- testng.SikuliTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
