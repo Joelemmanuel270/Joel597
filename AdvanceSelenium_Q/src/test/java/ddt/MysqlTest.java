@@ -2,18 +2,17 @@ package ddt;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Random;
-
 import org.testng.annotations.Test;
-
 import com.mysql.jdbc.Driver;
 
 public class MysqlTest { 
 	
 	@Test
-	public static void main() throws SQLException {
+	public void create() throws SQLException {
 		
 		// register/load the driver
 		Driver driveref = new Driver();
@@ -40,5 +39,30 @@ public class MysqlTest {
 		
 		con.close();
 		
+	}
+	
+	@Test
+	public void insert() throws Throwable {
+		// register/load the driver
+				Driver driveref = new Driver();
+				DriverManager.registerDriver(driveref);
+				
+				// establish connection to database
+				Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/advanceselenium", "root", "joel27");
+				
+				//create statement
+				Statement state = con.createStatement();
+				
+				String query="SELECT * FROM SELENIUM";
+				
+				ResultSet result = state.executeQuery(query);
+				 while(result.next())
+				    {
+				    	System.out.println(result.getInt(1)+"\t"+ result.getString(2)+"\t"+ result.getString(3)+"\t"+result.getString(4));
+				    }
+				
+				con.close();
+				
+
 	}
 }

@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import Generic_Utilities.*;
 import ObjectRepository.*;
 
-public class CampaignInformation2Test extends BassClass{
+public class CampaignInformation2Test extends BaseClass{
 	
 	@Test
 	public void CampaignInformation2() {

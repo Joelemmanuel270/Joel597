@@ -3,11 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testng.SikuliTest">
+      <class name="ddt.organisation.CampaigInformationTest">
         <methods>
-          <include name="priya"/>
+          <include name="BM"/>
+          <include name="BC"/>
+          <include name="AC"/>
+          <include name="BT"/>
+          <include name="AS"/>
+          <include name="AT"/>
+          <include name="AM"/>
+          <include name="CampaigInformation"/>
         </methods>
-      </class> <!-- testng.SikuliTest -->
+      </class> <!-- ddt.organisation.CampaigInformationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -4,7 +4,7 @@ import org.openqa.selenium.*;
 import org.testng.annotations.Test;
 import Generic_Utilities.*;
 
-public class ProductInformationTest extends BassClass {
+public class ProductInformationTest extends BaseClass {
 	
 	@Test
 	public void  ProductInformation() throws Throwable {

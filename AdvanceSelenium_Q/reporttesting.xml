@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="Generic_Utilities.Report"/>
+</listeners>
+  <test thread-count="5" name="Test" parallel="false">
+    <classes>
+      <class name="ddt.organisation.CampaignInformation2Test"/>
+      <class name="ddt.organisation.CampaigInformationTest"/>
+      <class name="ddt.organisation.ProductDeleteTest"/>
+       <class name="ddt.organisation.CreateOrganisationTest"/>
+      <class name="ddt.organisation.ProductInformationTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

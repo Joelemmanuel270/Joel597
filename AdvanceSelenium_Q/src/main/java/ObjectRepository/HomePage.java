@@ -22,12 +22,24 @@ public class HomePage {
 	@FindBy(css = "[href='index.php?module=Users&action=Logout']")
 	private WebElement signOut;
 	
-	@FindBy(linkText = "Products")
+	@FindBy(css = "[href='index.php?module=Products&action=index']" )
 	private WebElement prdLink;
 	
 	@FindBy(xpath = "//a[text()='More']")
 	private WebElement more;
 	
+	public WebElement getPrdLink() {
+		return prdLink;
+	}
+
+	public WebDriver getDriver() {
+		return driver;
+	}
+
+	public WebElement getSignOut() {
+		return signOut;
+	}
+
 	public WebElement getMore() {
 		return more;
 	}
@@ -50,11 +62,11 @@ public class HomePage {
 	 */
 	 public void logOutFromApp()
 	{	
-		 try {
-			Thread.sleep(1000);
-		} catch (Throwable e) {
-			System.out.println("TimeError");
-		}
+//		 try {
+//			Thread.sleep(200);
+//		} catch (Throwable e) {
+//			System.out.println("TimeError");
+//		}
 		 AdminLink.click();
 	     signOut.click();
 	    

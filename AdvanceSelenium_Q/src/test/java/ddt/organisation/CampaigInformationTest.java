@@ -7,11 +7,12 @@ import Generic_Utilities.*;
 import ObjectRepository.*;
 
 
-public class CampaigInformationTest extends BassClass{
+public class CampaigInformationTest extends BaseClass{
 	
 	
 	@Test
-	public static void CampaigInformation() {
+	public  void CampaigInformation() {
+		
 		
 		Webdriver_Utility web=new Webdriver_Utility(driver);
 		
@@ -36,6 +37,14 @@ public class CampaigInformationTest extends BassClass{
 		String text = campInfo.getcampaignNameVerify().getText();
 		System.out.println(text);
 		
+		
+		
+		
+//		//tempory
+//	
+//		
+//		driver.findElement(By.cssSelector("[src='themes/softed/images/user.PNG']")).click();
+//		driver.findElement(By.cssSelector("[href='index.php?module=Users&action=Logout']")).click();
 
 	}
 

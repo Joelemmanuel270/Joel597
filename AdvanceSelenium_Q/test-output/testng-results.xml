@@ -1,41 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="12" total="16" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-23T15:25:37 IST" name="Default suite" finished-at="2024-09-23T15:25:55 IST" duration-ms="17718">
+  <suite started-at="2024-10-29T17:08:06 IST" name="Suite" finished-at="2024-10-29T17:08:50 IST" duration-ms="44276">
     <groups>
     </groups>
-    <test started-at="2024-09-23T15:25:37 IST" name="Default test" finished-at="2024-09-23T15:25:55 IST" duration-ms="17718">
+    <test started-at="2024-10-29T17:08:06 IST" name="Test" finished-at="2024-10-29T17:08:50 IST" duration-ms="44276">
       <class name="ddt.organisation.ProductInformationTest">
-        <test-method is-config="true" signature="BT()[pri:0, instance:ddt.organisation.ProductInformationTest@fbd1f6]" started-at="2024-09-23T15:25:37 IST" name="BT" finished-at="2024-09-23T15:25:37 IST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BT -->
-        <test-method is-config="true" signature="BC()[pri:0, instance:ddt.organisation.ProductInformationTest@fbd1f6]" started-at="2024-09-23T15:25:37 IST" name="BC" finished-at="2024-09-23T15:25:39 IST" duration-ms="1425" status="PASS">
+        <test-method is-config="true" signature="BC()[pri:0, instance:ddt.organisation.ProductInformationTest@b2c9a9c]" started-at="2024-10-29T17:08:07 IST" name="BC" finished-at="2024-10-29T17:08:10 IST" duration-ms="3387" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BC -->
-        <test-method is-config="true" signature="BM()[pri:0, instance:ddt.organisation.ProductInformationTest@fbd1f6]" started-at="2024-09-23T15:25:39 IST" name="BM" finished-at="2024-09-23T15:25:43 IST" duration-ms="3961" status="PASS">
+        <test-method is-config="true" signature="BM()[pri:0, instance:ddt.organisation.ProductInformationTest@b2c9a9c]" started-at="2024-10-29T17:08:10 IST" name="BM" finished-at="2024-10-29T17:08:18 IST" duration-ms="8148" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BM -->
-        <test-method signature="ProductInformation()[pri:0, instance:ddt.organisation.ProductInformationTest@fbd1f6]" started-at="2024-09-23T15:25:43 IST" name="ProductInformation" finished-at="2024-09-23T15:25:52 IST" duration-ms="9553" status="PASS">
+        <test-method signature="ProductInformation()[pri:0, instance:ddt.organisation.ProductInformationTest@b2c9a9c]" started-at="2024-10-29T17:08:18 IST" name="ProductInformation" finished-at="2024-10-29T17:08:38 IST" duration-ms="19884" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductInformation -->
-        <test-method is-config="true" signature="AM()[pri:0, instance:ddt.organisation.ProductInformationTest@fbd1f6]" started-at="2024-09-23T15:25:52 IST" name="AM" finished-at="2024-09-23T15:25:55 IST" duration-ms="2505" status="PASS">
+        <test-method is-config="true" signature="AM()[pri:0, instance:ddt.organisation.ProductInformationTest@b2c9a9c]" started-at="2024-10-29T17:08:38 IST" name="AM" finished-at="2024-10-29T17:08:40 IST" duration-ms="2301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AM -->
-        <test-method is-config="true" signature="AC()[pri:0, instance:ddt.organisation.ProductInformationTest@fbd1f6]" started-at="2024-09-23T15:25:55 IST" name="AC" finished-at="2024-09-23T15:25:55 IST" duration-ms="215" status="PASS">
+        <test-method is-config="true" signature="AC()[pri:0, instance:ddt.organisation.ProductInformationTest@b2c9a9c]" started-at="2024-10-29T17:08:40 IST" name="AC" finished-at="2024-10-29T17:08:41 IST" duration-ms="356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AC -->
-        <test-method is-config="true" signature="AT()[pri:0, instance:ddt.organisation.ProductInformationTest@fbd1f6]" started-at="2024-09-23T15:25:55 IST" name="AT" finished-at="2024-09-23T15:25:55 IST" duration-ms="0" status="PASS">
+      </class> <!-- ddt.organisation.ProductInformationTest -->
+      <class name="ddt.organisation.CampaignInformation2Test">
+        <test-method is-config="true" signature="BT()[pri:0, instance:ddt.organisation.CampaignInformation2Test@b3ca52e]" started-at="2024-10-29T17:08:07 IST" name="BT" finished-at="2024-10-29T17:08:07 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BT -->
+        <test-method is-config="true" signature="BC()[pri:0, instance:ddt.organisation.CampaignInformation2Test@b3ca52e]" started-at="2024-10-29T17:08:07 IST" name="BC" finished-at="2024-10-29T17:08:10 IST" duration-ms="3388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BC -->
+        <test-method is-config="true" signature="BM()[pri:0, instance:ddt.organisation.CampaignInformation2Test@b3ca52e]" started-at="2024-10-29T17:08:10 IST" name="BM" finished-at="2024-10-29T17:08:20 IST" duration-ms="10141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BM -->
+        <test-method signature="CampaignInformation2()[pri:0, instance:ddt.organisation.CampaignInformation2Test@b3ca52e]" started-at="2024-10-29T17:08:20 IST" name="CampaignInformation2" finished-at="2024-10-29T17:08:42 IST" duration-ms="21898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CampaignInformation2 -->
+        <test-method is-config="true" signature="AM()[pri:0, instance:ddt.organisation.CampaignInformation2Test@b3ca52e]" started-at="2024-10-29T17:08:42 IST" name="AM" finished-at="2024-10-29T17:08:44 IST" duration-ms="2248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM -->
+        <test-method is-config="true" signature="AC()[pri:0, instance:ddt.organisation.CampaignInformation2Test@b3ca52e]" started-at="2024-10-29T17:08:44 IST" name="AC" finished-at="2024-10-29T17:08:45 IST" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AC -->
+        <test-method is-config="true" signature="AT()[pri:0, instance:ddt.organisation.CampaignInformation2Test@b3ca52e]" started-at="2024-10-29T17:08:50 IST" name="AT" finished-at="2024-10-29T17:08:50 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AT -->
-      </class> <!-- ddt.organisation.ProductInformationTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="AS()[pri:0, instance:ddt.organisation.CampaignInformation2Test@b3ca52e]" started-at="2024-10-29T17:08:51 IST" name="AS" finished-at="2024-10-29T17:08:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AS -->
+      </class> <!-- ddt.organisation.CampaignInformation2Test -->
+      <class name="ddt.organisation.CampaigInformationTest">
+        <test-method is-config="true" signature="BC()[pri:0, instance:ddt.organisation.CampaigInformationTest@7817fd62]" started-at="2024-10-29T17:08:07 IST" name="BC" finished-at="2024-10-29T17:08:10 IST" duration-ms="3390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BC -->
+        <test-method is-config="true" signature="BM()[pri:0, instance:ddt.organisation.CampaigInformationTest@7817fd62]" started-at="2024-10-29T17:08:10 IST" name="BM" finished-at="2024-10-29T17:08:24 IST" duration-ms="13570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BM -->
+        <test-method is-config="true" signature="AC()[pri:0, instance:ddt.organisation.CampaigInformationTest@7817fd62]" started-at="2024-10-29T17:08:29 IST" name="AC" finished-at="2024-10-29T17:08:29 IST" duration-ms="390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AC -->
+      </class> <!-- ddt.organisation.CampaigInformationTest -->
+      <class name="ddt.organisation.ProductDeleteTest">
+        <test-method is-config="true" signature="BC()[pri:0, instance:ddt.organisation.ProductDeleteTest@8297b3a]" started-at="2024-10-29T17:08:07 IST" name="BC" finished-at="2024-10-29T17:08:10 IST" duration-ms="3390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BC -->
+        <test-method is-config="true" signature="BM()[pri:0, instance:ddt.organisation.ProductDeleteTest@8297b3a]" started-at="2024-10-29T17:08:10 IST" name="BM" finished-at="2024-10-29T17:08:18 IST" duration-ms="7744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BM -->
+        <test-method signature="ProductDelete()[pri:0, instance:ddt.organisation.ProductDeleteTest@8297b3a]" started-at="2024-10-29T17:08:18 IST" name="ProductDelete" finished-at="2024-10-29T17:08:49 IST" duration-ms="30780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductDelete -->
+        <test-method is-config="true" signature="AM()[pri:0, instance:ddt.organisation.ProductDeleteTest@8297b3a]" started-at="2024-10-29T17:08:49 IST" name="AM" finished-at="2024-10-29T17:08:50 IST" duration-ms="1658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM -->
+        <test-method is-config="true" signature="AC()[pri:0, instance:ddt.organisation.ProductDeleteTest@8297b3a]" started-at="2024-10-29T17:08:50 IST" name="AC" finished-at="2024-10-29T17:08:50 IST" duration-ms="293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AC -->
+      </class> <!-- ddt.organisation.ProductDeleteTest -->
+      <class name="ddt.organisation.CreateOrganisationTest">
+        <test-method is-config="true" signature="BC()[pri:0, instance:ddt.organisation.CreateOrganisationTest@2362f559]" started-at="2024-10-29T17:08:07 IST" name="BC" finished-at="2024-10-29T17:08:10 IST" duration-ms="3390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BC -->
+        <test-method is-config="true" signature="BM()[pri:0, instance:ddt.organisation.CreateOrganisationTest@2362f559]" started-at="2024-10-29T17:08:10 IST" name="BM" finished-at="2024-10-29T17:08:23 IST" duration-ms="12890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BM -->
+        <test-method signature="CreateOrganisation()[pri:0, instance:ddt.organisation.CreateOrganisationTest@2362f559]" started-at="2024-10-29T17:08:23 IST" name="CreateOrganisation" finished-at="2024-10-29T17:08:37 IST" duration-ms="14219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateOrganisation -->
+        <test-method is-config="true" signature="AM()[pri:0, instance:ddt.organisation.CreateOrganisationTest@2362f559]" started-at="2024-10-29T17:08:37 IST" name="AM" finished-at="2024-10-29T17:08:43 IST" duration-ms="6293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM -->
+        <test-method is-config="true" signature="AC()[pri:0, instance:ddt.organisation.CreateOrganisationTest@2362f559]" started-at="2024-10-29T17:08:43 IST" name="AC" finished-at="2024-10-29T17:08:44 IST" duration-ms="319" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AC -->
+      </class> <!-- ddt.organisation.CreateOrganisationTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

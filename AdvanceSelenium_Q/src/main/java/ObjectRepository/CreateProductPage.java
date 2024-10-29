@@ -6,7 +6,8 @@ import org.openqa.selenium.support.FindBy;
 public class CreateProductPage{
 		
 	@FindBy(css = "[href='index.php?module=Products&action=index']" )
-	private WebElement productbutton;		
+	private WebElement productbutton;
+	
 	
 	
 }
