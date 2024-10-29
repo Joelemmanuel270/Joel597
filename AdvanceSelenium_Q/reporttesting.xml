@@ -4,7 +4,7 @@
 <listeners>
 <listener class-name="Generic_Utilities.Report"/>
 </listeners>
-  <test thread-count="5" name="Test" parallel="false">
+  <test thread-count="5" name="Test" >
     <classes>
       <class name="ddt.organisation.CampaignInformation2Test"/>
       <class name="ddt.organisation.CampaigInformationTest"/>
