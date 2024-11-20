@@ -30,6 +30,7 @@ public class ExtentReportImp implements ITestListener {
 		thread.get().log(Status.PASS, result.getThrowable());
 	}
 
+	
 	@Override
 	public void onTestFailure(ITestResult result) {
 		ExtentTest Test = thread.get();
