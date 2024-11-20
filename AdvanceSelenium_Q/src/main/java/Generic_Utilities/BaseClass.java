@@ -4,21 +4,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
-
 import java.io.File;
 import java.io.IOException;
-
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
+import org.testng.ITestContext;
 import org.testng.annotations.*;
 import ObjectRepository.*;
 
 public class BaseClass {
-	public static WebDriver sdriver;
+	
 	public WebDriver driver;
 	Webdriver_Utility wlib;
-
-	// @BeforeSuite
+	protected static ThreadLocal<WebDriver> drivers = new ThreadLocal<>();
+	@BeforeSuite
 	public void BS() {
 		System.out.println("DataBase Connection open");
 	}
@@ -30,9 +29,21 @@ public class BaseClass {
 
 	@BeforeClass
 	public void BC() throws Throwable {
-
+		
+		String BROWSER="";
 		File_utility fileb = new File_utility();
-		String BROWSER = fileb.getPropertiesvalue("Browser");
+		try {
+			BROWSER = System.getProperty("Browser");
+			if (BROWSER.isEmpty()) {
+				throw new RuntimeException();
+			}
+		} catch (RuntimeException e) {
+			e.getMessage();
+			BROWSER = fileb.getPropertiesvalue("Browser");
+		}
+		
+		
+		
 		if (BROWSER.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
 		} else if (BROWSER.equalsIgnoreCase("firefox")) {
@@ -45,15 +56,15 @@ public class BaseClass {
 		wlib = new Webdriver_Utility(driver);
 
 		System.out.println("Browser launched");
-		sdriver = driver;
-
+		drivers.set(driver);
+		
 	}
 
 	@BeforeMethod
 	public void BM() throws Throwable {
-
+		
 		wlib = new Webdriver_Utility(driver);
-		wlib.maximizeWindow();
+		//wlib.maximizeWindow();
 		wlib.pageWait();
 
 		// reading data from properties file
@@ -74,7 +85,9 @@ public class BaseClass {
 	}
 
 	@AfterClass
-	public void AC() {
+	public void AC() throws InterruptedException {
+		
+		Thread.sleep(5000);
 		driver.quit();
 	}
 
@@ -88,20 +101,6 @@ public class BaseClass {
 		System.out.println("Close DataBase Connection");
 	}
 
-	public static String screenShot(WebDriver driver,String testname) {
-		TakesScreenshot shot = (TakesScreenshot) driver;
-		File screenshotAs = shot.getScreenshotAs(OutputType.FILE);
-		File target = new File("./Screenshot/" + testname + ".png");
-		try {
-			FileUtils.copyFile(screenshotAs, target);
-		} catch (IOException e) {
-			e.getMessage();
-			e.printStackTrace();
-		}
 
-		return target.getAbsolutePath();
-	}
-
-	
 
 }

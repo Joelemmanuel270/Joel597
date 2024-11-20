@@ -24,10 +24,11 @@ public class ProductDeleteTest extends BaseClass {
 		
 //		driver.findElement(By.cssSelector("[href='index.php?module=Products&action=index']")).click();
 //		driver.findElement(By.cssSelector("[src='themes/softed/images/btnL3Add.gif']")).click();
+		System.out.println(s);
 		driver.findElement(By.name("productname")).sendKeys(s);
 
 		driver.findElement(By.cssSelector("[title='Save [Alt+S]']")).click();
-		driver.findElement(By.xpath("//a[@href=\"index.php?module=Products&action=index\"]")).click();
+		driver.findElement(By.xpath("//a[@href='index.php?module=Products&action=index']")).click();
 
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//a[text()='"+ s +"']/../../td/input[@type='checkbox']")).click();

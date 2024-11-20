@@ -3,18 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ddt.organisation.CampaigInformationTest">
+      <class name="ddt.organisation.ProductDeleteTest">
         <methods>
           <include name="BM"/>
+          <include name="ProductDelete"/>
           <include name="BC"/>
+          <include name="BS"/>
           <include name="AC"/>
           <include name="BT"/>
           <include name="AS"/>
           <include name="AT"/>
           <include name="AM"/>
-          <include name="CampaigInformation"/>
         </methods>
-      </class> <!-- ddt.organisation.CampaigInformationTest -->
+      </class> <!-- ddt.organisation.ProductDeleteTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

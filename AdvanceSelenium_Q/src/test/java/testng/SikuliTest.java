@@ -6,6 +6,8 @@ import java.util.Random;
 import org.sikuli.script.Pattern;
 import org.sikuli.script.Screen;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+import org.testng.asserts.SoftAssert;
 
 public class SikuliTest  {
 	
@@ -49,7 +51,19 @@ public class SikuliTest  {
 	
 	@Test
 	public void priyaLusu() {
+		
 		System.out.println("method name is correct ==> priyaLusu");
+		System.out.println("Step1");
+		System.out.println("Step2");
+		System.out.println("Step3");
+		SoftAssert soft = new SoftAssert();
+		soft.assertEquals(true, false);
+		System.out.println("Step4");
+		soft.assertAll();
+		System.out.println("Step5");
+		
+		
+
 
 	}
 

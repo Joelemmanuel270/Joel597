@@ -44,6 +44,7 @@ public class CampaignInformation2Test extends BaseClass{
 		CampaignInformationPage campInfo=new CampaignInformationPage(driver);
 		String text = campInfo.getcampaignNameVerify().getText();
 		System.out.println(text); 
+		throw new RuntimeException();
 		
 		
 	}

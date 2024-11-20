@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Generic_Utilities.ExtentReportImp"/>
+  </listeners>
+  <test thread-count="5" parallel="methods" name="Test1(failed)(failed)">
+    <classes>
+      <class name="ddt.organisation.CampaignInformation2Test">
+        <methods>
+          <include name="BM"/>
+          <include name="BC"/>
+          <include name="AC"/>
+          <include name="BT"/>
+          <include name="AS"/>
+          <include name="AT"/>
+          <include name="AM"/>
+          <include name="CampaignInformation2"/>
+        </methods>
+      </class> <!-- ddt.organisation.CampaignInformation2Test -->
+      <class name="ddt.organisation.ProductDeleteTest">
+        <methods>
+          <include name="BM"/>
+          <include name="ProductDelete"/>
+          <include name="BC"/>
+          <include name="AC"/>
+          <include name="BT"/>
+          <include name="AS"/>
+          <include name="AT"/>
+          <include name="AM"/>
+        </methods>
+      </class> <!-- ddt.organisation.ProductDeleteTest -->
+    </classes>
+  </test> <!-- Test1(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
